@@ -1,0 +1,109 @@
+
+
+/* ヘッダー */
+.header {
+    background-color: #000;
+}
+
+.header__inner {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 20px 40px;
+}
+
+.header__logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* お問い合わせフォームのスタイル */
+.contact-form {
+    padding: 30px 15px;
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
+.contact-form__title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-form__title h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.contact-form__content{
+    margin: 0 auto;
+    width: 70%;
+}
+
+/* フォームグループのスタイル */
+.contact-form__group {
+    display: flex;
+    max-width: 1230px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.contact-form__title-label,
+.contact-form__group-content,
+.contact-form__item-textarea{
+    padding: 20px;
+}
+
+.contact-form__title-label{
+    text-align: left;
+    width: 30%;
+}
+
+
+.contact-form__label-required {
+    margin-left: 5px;
+    padding: 4px 6px;
+    border-radius: 3px;
+    background: #fafafa;
+    color: #aaa;
+}
+
+.contact-form__group-content,
+.contact-form__item-textarea{
+    width: 70%;
+}
+
+/* 入力フィールドのスタイル */
+.contact-form__input--text input,
+.contact-form__item-textarea textarea {
+    width:100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+    appearance: none;
+}
+
+
+.contact-form__item-textarea textarea {
+    resize: vertical;
+    height: 200px;
+}
+
+/* 送信ボタンのスタイル */
+.contact-form__button{
+    text-align: center;
+}
+.contact-form__button-submit {
+    width: 30%;
+    padding: 12px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
