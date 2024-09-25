@@ -1,0 +1,80 @@
+/* ヘッダー */
+.header {
+    background-color: #000;
+}
+
+.header__inner {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 20px 40px;
+}
+
+.header__logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* お問い合わせ内容確認フォームのスタイル */
+.confirm-form {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+
+.confirm-form__title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.confirm-form__title h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.form {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.confirm-table {
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+.confirm-table__title {
+    padding: 15px;
+    width: 20%;
+    border-bottom: 1px solid #ddd;
+    background-color: #eee;
+    font-weight: bold;
+    text-align: center;
+}
+
+.confirm-table__item {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.confirm-table__item-input {
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.confirm-form__button {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.confirm-form__button-submit {
+    padding: 10px;
+    width: 30%;
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
