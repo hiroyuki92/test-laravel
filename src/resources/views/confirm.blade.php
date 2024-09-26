@@ -22,33 +22,34 @@
             <h2>お問い合わせ内容確認</h2>
         </div>
 
-        <form class="form">
+        <form class="form" action="/contacts" method="post">
+        @csrf
             <table class="confirm-table">
                 <tr class="confirm-table__row">
                     <th class="confirm-table__title">名前</th>
                         <td class="confirm-table__item">
-                            <input class="confirm-table__item-input" type="text" name="name">
+                            <input type="text" name="name" value="{{ $contact['name'] }}" readonly />
                         </td>
                     </th>
                 </tr>
                 <tr class="confirm-table__row">
                     <th class="confirm-table__title">メールアドレス</th>
                         <td class="confirm-table__item">
-                            <input class="confirm-table__item-input" type="email" name="email">
+                            <input type="email" name="email" value="{{ $contact['email'] }}" readonly />
                         </td>
                     </th>
                 </tr>
                 <tr class="confirm-table__row">
                     <th class="confirm-table__title">電話番号</th>
                         <td class="confirm-table__item">
-                            <input class="confirm-table__item-input" type="tel" name="tel">
+                            <input type="tel" name="tel"  value="{{ $contact['tel'] }}" readonly />
                         </td>
                     </th>
                 </tr>
                 <tr class="confirm-table__row">
                     <th class="confirm-table__title">お問い合わせ内容</th>
                         <td class="confirm-table__item">
-                            <input class="confirm-table__item-input" type="text" name="content">
+                            <input type="text" name="content"  value="{{ $contact['content'] }}" readonly />
                         </td>
                     </th>
                 </tr>

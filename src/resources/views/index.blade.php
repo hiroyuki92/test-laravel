@@ -31,8 +31,13 @@
                 </div>
                 <div class="contact-form__group-content">
                     <div class="contact-form__input--text">
-                        <input type="text" name="name" placeholder="テスト太郎">
+                        <input type="text" name="name" placeholder="テスト太郎" value="{{ old('name') }}" />
                     </div>
+                </div>
+                <div class="error-message">
+                    @error('name')
+                    {{$message}}
+                    @enderror
                 </div>
             </div>
             <div class="contact-form__group">
@@ -42,8 +47,13 @@
                 </div>
                 <div class="contact-form__group-content">
                     <div class="contact-form__input--text">
-                    <input type="email" name="email" placeholder="test@example.com">
+                    <input type="email" name="email" placeholder="test@example.com" value="{{ old('email') }}" />
                     </div>
+                </div>
+                <div class="error-message">
+                    @error('email')
+                    {{$message}}
+                    @enderror
                 </div>
             </div>
             <div class="contact-form__group">
@@ -53,7 +63,12 @@
                 </div>
                 <div class="contact-form__group-content">
                     <div class="contact-form__input--text">
-                        <input type="tel" name="tel" placeholder="09012345678">
+                        <input type="tel" name="tel" placeholder="09012345678" value="{{ old('tel') }}" />
+                    </div>
+                    <div class="error-message">
+                    @error('tel')
+                    {{$message}}
+                    @enderror
                     </div>
                 </div>
             </div>
@@ -62,7 +77,7 @@
                     <span class="contact-form__label">お問い合わせ内容</span>
                 </div>
                 <div class="contact-form__item-textarea">
-                    <textarea name="contact-form__item-input-textarea" placeholder="資料をいただきたいです"></textarea>
+                    <textarea name="content" placeholder="資料をいただきたいです" value="{{ old('content') }}" /></textarea>
                 </div>
             </div>
             <div class="contact-form__button">
